@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+<head>
+	<!--Created by Xinhui Zhou, with inspiration from grca.org-->
+<meta charset="UTF-8">
+<meta name="keywords" content="Golden Retriever, pet, health,grooming">
+<title>Golden Retriever time</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+</head>
+	
+<body>
+	
+<header>
+	<h1>Golden Retriever time</h1>
+	<!--Cite from http://www.pngmart.com/image/126636-->
+	<img width="70px" height="70px" src="img/logo.png" alt="Golden Retriever logo">
+</header>
+
+<div class="navbar">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="health.html">Health and Care</a></li>
+		<li><a href="grooming.html">Grooming</a></li>
+		<li><a href="training.html">Training</a></li>
+		<div class="subnav">
+	 	<button class="subnavbtn">Characteristics <i class="fa fa-caret-down"></i></button>
+    	<div class="subnav-content">
+      		<a href="characteristics.html">British</a>
+      		<a href="characteristics.html">American</a>
+      		<a href="characteristics.html">Canadian</a>
+    </div>
+  </div> 
+		<li><a href="contact.html">Contact</a></li>
+		<input type="text" placeholder="Search..">
+	</ul>
+</div>	
+
+<!--The banner will be a autoplay video!-->
+<!-- Cite from https://youtu.be/hI3MYzhFgIY-->
+
+<video autoplay muted loop id="myVideo">
+  		<source src="media/puppy.mp4" type="video/mp4">
+</video>
+
+<div class="content">
+  	<h1>Golden Retriever time</h1>
+	<br>
+  	<p>Watch these cute little puppies! Why not get one? We provide general information about golden retrievers. Check out their characteristics, health info, groooming and training advice here. </p>
+	<br>
+  	<button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+
+<!--cite from https://www.w3schools.com/-->
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  	if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+<main>
+	<div class="general">
+		<!--Cite from https://www.flickr.com/photos/25802393@N02/4659273282-->
+  		<img class="info" src="img/home-general.jpg" alt="a photo of a golden retriever">
+		<h1>Welcome to Golden Retriever Time!</h1>
+		<p>"The Golden Retriever is a medium-large gun dog that was bred to retrieve shot waterfowl, such as ducks and upland game birds, during hunting and shooting parties.The name "retriever" refers to the breed's ability to retrieve shot game undamaged due to their soft mouth. The Golden Retriever is popular as a disability assistance dog, such as being a guide dog for the blind and a hearing dog for the deaf. In addition, they are trained to be a hunting dog, a detection dog, and a search and rescue participant.They are friendly and gentle."(Taken from wikipedia.)</p>
+	</div>
+
+<section id="features">
+		<div class="feature-block">
+			<h2>How to bathe your dog?</h2>
+			<!--cite from https://www.flickr.com/photos/47544801@N00/5860549264-->
+			<a href="grooming.html"><img src="img/feature-1.jpg" alt="grooming"></a>
+			<p>Golden Retrievers require regular grooming and occasional baths.Their coats shed somewhat during the year...</p>
+			<br>
+			<div class="button-grooming"><a class="button" href="grooming.html" data-icon="I">Lean more</a></div>
+		</div>
+		<div class="feature-block">
+			<h2>Different characteristics?</h2>
+			<a href="characteristics.html"><img src="img/feature-2.jpg" alt="characteristics"></a>
+			<p>The three subtypes of the Golden Retriever reflect the typical variations in dimensions and coat... </p>
+			<br>
+			<div class="button-characteristics"><a class="button" href="characteristics.html" data-icon="I">Lean more</a></div>	
+		</div>
+		<div class="feature-block">
+			<h2>Training tips</h2>
+			<a href="training.html"><img src="img/feature-3.jpg" alt="training"></a>
+			<p>Golden Retrievers are exceptionally trainable—due to their intelligence, athleticism and desire to please their handlers...</p>
+			<br>
+			<div class="button-characteristics"><a class="button" href="training.html" data-icon="I">Lean more</a></div>
+		</div>
+		<div class="feature-block">
+			<h2>Contact us</h2>
+			<!--cite from https://images.app.goo.gl/5Gckd1ZjPwD9cLKc8-->
+			<a href="contact.html"><img src="img/feature-4.jpg" alt="contact information"></a>
+			<p>Contact us and subscribe for more news and information.</p>
+			<br><br>
+			<div class="button-contact"><a class="button" href="contact.html" data-icon="I">Lean more</a></div>
+		</div>
+	</section>
+
+</main>
+
+<footer>
+	<span> &copy; 2020 Golden Retriever Time. 
+	All rights reserved.</span>
+</footer>
+
+
+</body>
+</html>
